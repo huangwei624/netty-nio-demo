@@ -13,7 +13,6 @@ import java.nio.charset.Charset;
 import java.util.Iterator;
 
 public class ClientDemo{
-	
 	private final ByteBuffer sendBuffer= ByteBuffer.allocate(1024);
 	private final ByteBuffer receiveBuffer=ByteBuffer.allocate(1024);
 	private Selector selector;
@@ -49,7 +48,6 @@ public class ClientDemo{
 					send(key);
 				}
 			}
-			
 		}
 	}
 	

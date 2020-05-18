@@ -23,9 +23,5 @@ public class ByteBufferDemo {
 		buffer.clear();
 		System.out.println("是否有元素：" + buffer.hasRemaining());
 		System.out.println("position: "+buffer.position()+", limit: "+	buffer.limit());    //  0    1024
-		
-		
-		
-		
 	}
 }

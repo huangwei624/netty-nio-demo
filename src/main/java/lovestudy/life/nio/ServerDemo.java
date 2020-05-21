@@ -20,8 +20,7 @@ public class ServerDemo{
 	public ServerDemo() throws IOException {
 		ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
 		serverSocketChannel.configureBlocking(false);
-		ServerSocket serverSocket = serverSocketChannel.socket();
-		serverSocket.bind(new InetSocketAddress(8080));
+		serverSocketChannel.bind(new InetSocketAddress(8080));
 		System.out.println("listening on port 8080");
 		this.selector = Selector.open();;
 		// 绑定channel的accept
